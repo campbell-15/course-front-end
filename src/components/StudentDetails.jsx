@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -25,6 +26,7 @@ const StudentDetails = () => {
         {count > 0 ? <h1>Counter is {count}</h1> : <h1>Counter is zero</h1>}
         <button onClick={incrementClick}></button>
         <button onClick={decrementClick}></button>
+        <Link to={"/manual-counter"}>Manual Counter</Link>
         </div>
     )
         
